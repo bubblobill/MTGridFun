@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="net.rptools.maptool.client.tool.gridtool.AdjustGridControlPanelView">
+  <grid id="241de" binding="mainPanel" layout-manager="GridLayoutManager" row-count="13" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="5" left="5" bottom="5" right="5"/>
+    <constraints>
+      <xy x="10" y="10" width="510" height="390"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="3c6d" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <labelFor value="4491d"/>
+          <text resource-bundle="net/rptools/maptool/language/i18n" key="GridControlPanel.size"/>
+        </properties>
+      </component>
+      <component id="3c06e" class="javax.swing.JButton">
+        <constraints>
+          <grid row="12" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <actionCommand value="Close"/>
+          <name value="closeButton"/>
+          <text resource-bundle="net/rptools/maptool/language/i18n" key="Button.close"/>
+        </properties>
+      </component>
+      <component id="878b9" class="javax.swing.JLabel" binding="opacityLabel">
+        <constraints>
+          <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Opacity"/>
+        </properties>
+      </component>
+      <component id="5de14" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Rendering"/>
+        </properties>
+      </component>
+      <component id="e76b4" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Alternate Colour"/>
+        </properties>
+      </component>
+      <component id="cc167" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Use Two Colours"/>
+        </properties>
+      </component>
+      <component id="fc6e2" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text resource-bundle="net/rptools/maptool/language/i18n" key="GridControlPanel.color"/>
+        </properties>
+      </component>
+      <component id="a8cfa" class="javax.swing.JCheckBox" binding="useTwoColours">
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <hideActionText value="true"/>
+          <selected value="true"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="c6722" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Soften Edges"/>
+        </properties>
+      </component>
+      <component id="30a39" class="javax.swing.JCheckBox" binding="gridFade">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <hideActionText value="true"/>
+          <selected value="true"/>
+          <text value=""/>
+          <toolTipText value=""/>
+        </properties>
+        <clientProperties>
+          <html.disable class="java.lang.Boolean" value="false"/>
+        </clientProperties>
+      </component>
+      <component id="9f3f1" class="net.rptools.maptool.client.swing.ColorWell" binding="mainColourPicker" custom-create="true">
+        <constraints>
+          <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="1" use-parent-layout="false">
+            <minimum-size width="1" height="1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="30d1b" class="net.rptools.maptool.client.swing.ColorWell" binding="alternateColourPicker" custom-create="true">
+        <constraints>
+          <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="189f6" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Only Show Exposed"/>
+        </properties>
+      </component>
+      <component id="b745f" class="javax.swing.JCheckBox" binding="exposedOnly">
+        <constraints>
+          <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <selected value="true"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="12081" class="javax.swing.JCheckBox" binding="checkBox1" default-binding="true">
+        <constraints>
+          <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <selected value="true"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="7752d" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Draw Over Fog"/>
+        </properties>
+      </component>
+      <component id="cbe69" class="javax.swing.JTextField" binding="gridOffsetX">
+        <constraints>
+          <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <columns value="6"/>
+          <name value="offsetX"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="6cd53" class="javax.swing.JTextField" binding="gridOffsetY">
+        <constraints>
+          <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <columns value="6"/>
+          <name value="offsetY"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="4491d" class="javax.swing.JSpinner" binding="gridSize">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <name value="gridSize"/>
+        </properties>
+      </component>
+      <component id="8631a" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <labelFor value="fc376"/>
+          <name value="gridSecondDimensionLabel"/>
+          <text resource-bundle="net/rptools/maptool/language/i18n" key="GridControlPanel.size.second"/>
+        </properties>
+      </component>
+      <component id="fc376" class="javax.swing.JTextField" binding="secondSize">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <columns value="6"/>
+          <name value="gridSecondDimension"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="91ce8" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <labelFor value="cbe69"/>
+          <text resource-bundle="net/rptools/maptool/language/i18n" key="GridControlPanel.offset.x"/>
+        </properties>
+      </component>
+      <component id="dd1cc" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <labelFor value="6cd53"/>
+          <text resource-bundle="net/rptools/maptool/language/i18n" key="GridControlPanel.offset.y"/>
+        </properties>
+      </component>
+      <component id="9c353" class="javax.swing.JSpinner" binding="lineOffset">
+        <constraints>
+          <grid row="8" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="4c5eb" class="javax.swing.JSpinner" binding="lineWeight">
+        <constraints>
+          <grid row="9" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="3f6fb" class="javax.swing.JComboBox" binding="gridStyle">
+        <constraints>
+          <grid row="10" column="2" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-1"/>
+          <editable value="false"/>
+          <enabled value="true"/>
+          <model>
+            <item value="Solid"/>
+            <item value="Dotted"/>
+            <item value="Dashed"/>
+            <item value="Intersection"/>
+            <item value="Intersection &amp; Mid-point"/>
+          </model>
+          <name value="GridSelectorBox"/>
+        </properties>
+      </component>
+      <component id="b28ec" class="javax.swing.JComboBox" binding="blendComposite">
+        <constraints>
+          <grid row="11" column="2" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-1"/>
+          <editable value="false"/>
+          <enabled value="false"/>
+          <model>
+            <item value="None"/>
+          </model>
+          <name value="GridSelectorBox"/>
+        </properties>
+      </component>
+      <component id="42e9c" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <labelFor value="9c353"/>
+          <text value="Border Gap"/>
+        </properties>
+      </component>
+      <component id="9ab6c" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="9" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <labelFor value="4c5eb"/>
+          <text value="Line Weight"/>
+        </properties>
+      </component>
+      <component id="1ed06" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="10" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Line Style"/>
+        </properties>
+      </component>
+      <component id="89a13" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="11" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <labelFor value="b28ec"/>
+          <text value="Blend Effect"/>
+        </properties>
+      </component>
+      <component id="e83dd" class="javax.swing.JSlider" binding="zoomSlider">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="3" vsize-policy="2" hsize-policy="7" anchor="0" fill="1" indent="2" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <inverted value="false"/>
+          <majorTickSpacing value="0"/>
+          <maximum value="700"/>
+          <minimum value="9"/>
+          <minorTickSpacing value="50"/>
+          <name value="zoomSlider"/>
+          <paintTicks value="true"/>
+          <value value="100"/>
+        </properties>
+      </component>
+      <component id="db190" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Zoom"/>
+        </properties>
+      </component>
+      <component id="1262e" class="javax.swing.JSlider" binding="opacity">
+        <constraints>
+          <grid row="7" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <minorTickSpacing value="10"/>
+          <paintLabels value="true"/>
+          <paintTicks value="true"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
